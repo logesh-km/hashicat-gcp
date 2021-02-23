@@ -4,10 +4,10 @@
 
 terraform {
   backend "remote" {
-    organization = "loki-training"
-
+    hostname = "app.terraform.io"
+    organization = "YOURORGANIZATION"
     workspaces {
-      name = "hashicat-gcp"
+      name = "YOURWORKSPACE"
     }
   }
 }
